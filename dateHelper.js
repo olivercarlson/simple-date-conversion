@@ -1,5 +1,5 @@
 /*
-   Date Helper is a pure function to provide a clean and simple output for other functions to interact with. 
+   Date Helper is a pure function to provide a clean and simple output API for other functions to interact with. 
 
     Expected to handle three different types of input based off of where the data is sourced
     and always a reliable, pure output 
@@ -15,7 +15,7 @@
 const convertToDateFormat = (date) => {
 	let result;
 
-	// Input is in the correct format. Return Immediately with an explicit Number format.
+	// Input is in the correct format. No changes.
 	if (typeof date === typeof Number()) {
 		result = date;
 	}

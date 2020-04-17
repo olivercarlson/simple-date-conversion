@@ -12,7 +12,7 @@ describe('Convert to Date Format Logic', () => {
 	});
 });
 
-describe('We can now reliably and easily test mathematical functions based on a standardized, singualr format', () => {
+describe('We can now reliably and easily test mathematical functions based on a standardized, singular format', () => {
 	test('Add a year', () => {
 		expect(addYear(20190627)).toBe(20200627);
 	});
