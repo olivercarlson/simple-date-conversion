@@ -1,8 +1,7 @@
 /*
    Date Helper is a pure function to provide a clean and simple output API for other functions to interact with. 
 
-    Expected to handle three different types of input based off of where the data is sourced
-    and always a reliable, pure output 
+    Expected to handle three different types of input based off of where the data is sourced.
 
     #1: Input: NUMBER YYYYMMDD 
     #2: Input: STRING 'Dec 12 2018' || String 'DEC 12 2018'
@@ -53,7 +52,7 @@ const convertToDateFormat = (date) => {
 	return Number(result);
 };
 
-// Sample Function to use the format to handle the date generated from above:
+// Sample Functions to use the format to handle the date generated from above:
 const addYear = (date) => {
 	return date + 10000;
 };
