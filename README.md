@@ -10,7 +10,9 @@ The UI state would need to change for each customer based on a per month basis s
 system (e.g "You got solar this month!") in addition to other calculations.    
 
 # Requirements:
-    This code snippet demonstrates the following key principles:
+
+This code snippet demonstrates the following key principles:
+
         1. Easy to use:
             A simple and reliable I/O model - input the dates from the bills and know exactly what the output is.
         2. Easy to reason about:
@@ -21,28 +23,29 @@ system (e.g "You got solar this month!") in addition to other calculations.
      
 # Considerations:
 
-    These two options represent two of the main considerations chosen when deciding on writing the code in this repository.
-    Overall, both of these alternatives ended up providing solutions akin to the classic gorilla and the banana scenario 
-    where you what you wanted was the banana but instead you got the gorilla and the entire jungle.
+These two options represent two of the main considerations chosen when deciding on writing the code in this repository.
+Overall, both of these alternatives ended up providing solutions akin to the classic gorilla and the banana scenario 
+where you what you wanted was the banana but instead you got the gorilla and the entire jungle.
     
-    - ## Use JavaScript's built in Date Object:
-        Two main drawbacks from the Date.Object.
+## Use JavaScript's built in Date Object:
+Two main drawbacks from the Date.Object.
+
             1. It is far too easy to accidentally write mutative code using the Date object. 
             2. Overall, added more complexity than it removed by automatically formatting dates with time zones.
         
-    - ## Alternatively, use Moment.js or similar library to handle date conversion:
-        Drawbacks of third party library solution:
-            3. As with (1) above, it is again quite easy to mutate Moment date objects though clearer and easier to avoid 
-            here.
-            4. Adds an another non-native API to learn.
-            5. Includes a lot of unnecessary code for what are other pretty simple date manipulations. (edge cases such as leap years,
-            were straightforward to solve in the production version).
+## Alternatively, use Moment.js or similar library to handle date conversion:
+Drawbacks of third party library solution:
+
+    1. As with (1) above, it is again quite easy to mutate Moment date objects though clearer and easier to avoid 
+    here.
+    2. Adds an another non-native API to learn.
+    3. Includes a lot of unnecessary code for what are other pretty simple date manipulations. (edge cases such as leap years, were straightforward to solve in the production version).
             
 # Results:
-    - The resulting code provides a reliable output format from a variety of inputs. 
-    If you accidentally call it on a date already in the correct format, it simply returns the original input.
+The resulting code provides a reliable output format from a variety of inputs. 
+If you accidentally call it on a date already in the correct format, it simply returns the original input.
     
-    - Additionally, the codes output provides a singular input for other functions to build from such as the simple 
-    "add a year" function to the more complex such as comparing multiple past and future date pairs with the current year bill range.        
+Additionally, the codes output provides a singular input for other functions to build from such as the simple 
+"add a year" function to the more complex such as comparing multiple past and future date pairs with the current year bill range.        
     
 
