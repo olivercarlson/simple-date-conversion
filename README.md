@@ -14,16 +14,13 @@ system (e.g "You got solar this month!") in addition to other calculations.
 This code snippet demonstrates the following key principles:
 
 1. Easy to use:
-
-            A simple and reliable I/O model - input the dates from the bills and know exactly what the output is.
+A simple and reliable I/O model - input the dates from the bills and know exactly what the output is.
             
 2. Easy to reason about:
+Pure functions. No state mutations, no side effects. Debugging logic based off of this is far easier because you can build the logic in smaller, bite-sized chunks.  
 
-            Pure functions. No state mutations, no side effects. Debugging logic based off of this is far easier because
-            you can build the logic in smaller, bite-sized chunks.  
 2. Testable:
-
-            No stubs or mocking. Requirements for the current code are documented with tests.
+No stubs or mocking. Requirements for the current code are documented with tests.
      
 # Considerations:
 
