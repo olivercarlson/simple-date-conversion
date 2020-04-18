@@ -13,13 +13,17 @@ system (e.g "You got solar this month!") in addition to other calculations.
 
 This code snippet demonstrates the following key principles:
 
-        1. Easy to use:
+1. Easy to use:
+
             A simple and reliable I/O model - input the dates from the bills and know exactly what the output is.
-        2. Easy to reason about:
+            
+2. Easy to reason about:
+
             Pure functions. No state mutations, no side effects. Debugging logic based off of this is far easier because
             you can build the logic in smaller, bite-sized chunks.  
-        2. Testable:
-            No stubs or mocking. Requirements for the current code documented with tests.
+2. Testable:
+
+            No stubs or mocking. Requirements for the current code are documented with tests.
      
 # Considerations:
 
@@ -30,16 +34,15 @@ where you what you wanted was the banana but instead you got the gorilla and the
 ## Use JavaScript's built in Date Object:
 Two main drawbacks from the Date.Object.
 
-            1. It is far too easy to accidentally write mutative code using the Date object. 
-            2. Overall, added more complexity than it removed by automatically formatting dates with time zones.
+1. It is far too easy to accidentally write mutative code using the Date object. 
+2. Overall, added more complexity than it removed by automatically formatting dates with time zones.
         
 ## Alternatively, use Moment.js or similar library to handle date conversion:
 Drawbacks of third party library solution:
 
-    1. As with (1) above, it is again quite easy to mutate Moment date objects though clearer and easier to avoid 
-    here.
-    2. Adds an another non-native API to learn.
-    3. Includes a lot of unnecessary code for what are other pretty simple date manipulations. (edge cases such as leap years, were straightforward to solve in the production version).
+1. As with (1) above, it is again quite easy to mutate Moment date objects though clearer and easier to avoid here.
+2. Adds an another non-native API to learn.
+3. Includes a lot of unnecessary code for what are other pretty simple date manipulations. (edge cases such as leap years, were straightforward to solve in the production version).
             
 # Results:
 The resulting code provides a reliable output format from a variety of inputs. 
