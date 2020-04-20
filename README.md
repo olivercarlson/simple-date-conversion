@@ -54,5 +54,5 @@ As a secondary benefit to the choice, the format does allow for easy comparison 
 
 ```
 solar birthdate < date one year ago ? 
-return <div>"You got solar this year, good job!"</div> : return <div>"You've had solar for more than a year. Keep up the good work!"</div>
+return <div>You got solar this year, good job!</div> : return <div>You've had solar for more than a year. Keep up the good work!</div>
 ```
