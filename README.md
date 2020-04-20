@@ -52,4 +52,4 @@ Additionally, the codes output provides a singular input for other functions to 
 
 As a secondary benefit to the choice, the format does allow for easy comparison because the numerical value is always greater on a newer date e.g to display graphics and UI such as "You got solar this year good job!" (below example assumes that they are already converted to the date format and stored that way) 
 
-solar birthdate < date one year ago ? return <div>"You got solar this year, good job!"</div> : return <div>"You've had solar for more than a year. Keep up the good work!"</div>   
+###solar birthdate < date one year ago ? return <div>"You got solar this year, good job!"</div> : return <div>"You've had solar for more than a year. Keep up the good work!"</div>   ###
